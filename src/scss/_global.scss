@@ -1,0 +1,62 @@
+@use "vars" as *;
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: $font-main;
+  color: $color-text;
+  background: $color-bg;
+}
+
+.container {
+  width: min(100% - 32px, $container-width);
+  margin-inline: auto;
+}
+
+.header {
+  padding: 24px 0;
+  background: $color-white;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__logo {
+    font-weight: 700;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__nav a {
+    transition: color $transition;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+.hero {
+  padding: 96px 0;
+
+  &__title {
+    max-width: 760px;
+    font-family: $font-title;
+    font-size: clamp(40px, 6vw, 76px);
+    line-height: 1.08;
+  }
+
+  &__text {
+    max-width: 560px;
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: $color-muted;
+  }
+}
