@@ -1,21 +1,5 @@
-@media (max-width: 768px) {
-  .header {
-    &__inner {
-      align-items: flex-start;
-      flex-direction: column;
-    }
-
-    &__nav {
-      flex-direction: column;
-      gap: 12px;
-    }
-  }
-
-  .hero {
-    padding: 64px 0;
-
-    &__text {
-      font-size: 18px;
-    }
+@media (max-height: 850px) {
+  .sidebar-tags {
+    display: none;
   }
 }
