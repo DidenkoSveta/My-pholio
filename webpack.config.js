@@ -57,6 +57,7 @@ module.exports = (env, argv) => {
           minify: false,
           templateParameters: {
             sidebar: getPartial("side-bar"),
+            caseNav: getPartial("case-nav"),
           },
         });
       }),

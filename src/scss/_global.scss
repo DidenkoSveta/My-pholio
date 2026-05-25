@@ -1,11 +1,28 @@
 @use "vars" as *;
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   min-width: 320px;
   overflow-x: hidden;
   font-family: $font-primary;
   color: $color-text-primary;
   background: $color-bg-primary;
+  gap: 6px;
+  display: flex;
+}
+.main {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6px 6px 6px 352px;
+  gap: 6px;
+  font-size: 18px;
+  font-family: $font-primary;
+  font-weight: normal;
 }
 
 .container {
@@ -13,8 +30,106 @@ body {
   margin-inline: auto;
 }
 
-.page {
-  min-height: 100vh;
-  padding-left: 284px;
-  background: #f5f5f5;
+.section-case {
+  width: 100%;
+  padding: 24px;
+  background-color: $color-bg-secondary;
+  border-radius: 10px;
 }
+.about_case {
+  display: flex;
+  gap: 24%;
+  padding: 32px 24px;
+}
+
+.project_about-section {
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-secondary;
+  font-size: 16px;
+  color: $color-text-secondary;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: $font-primary;
+  width: 380px;
+  display: block;
+  flex: 0 0 280px;
+  line-height: 130%;
+  margin-top: 0;
+}
+.hero {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  h1 {
+    max-width: 800px;
+  }
+  img {
+    border-radius: 10px;
+  }
+}
+.section-case_text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-right: 60px;
+}
+.section-case_list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.section-case_list li::before {
+  content: "›";
+  font-size: 24px;
+  font-weight: 300;
+  color: #006cff;
+}
+.section-case_list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.result li {
+  font-weight: 600;
+}
+.section-case {
+  scroll-margin-top: 32vh;
+}
+.design-screen{
+  padding: 24px 32px;
+}
+.design-screen_img {
+  border-radius: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(184, 202, 213, 0.189);
+  box-shadow:
+    0 2px 2px 0 rgba(0, 32, 51, 0.02),
+    0 2px 8px 0 rgba(0, 32, 51, 0.08);
+}
+
+.case_collapse {
+  display: flex;
+  gap: 8px;
+  // background: none;
+}
+
+.image-case_collapse {
+  background-color: $color-bg-secondary;
+  border-radius: 10px;
+}
+.image-case_coll {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+// .great-screen {
+//   margin: 0 80px;
+//   width: 90%;
+// }

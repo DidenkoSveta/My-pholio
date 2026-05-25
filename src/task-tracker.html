@@ -4,27 +4,199 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Task Tracker</title>
-
+    <title>Didenko Svetlana | Task-tracker</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body data-page="task-tracker">
     <%= sidebar %>
-    
-    <main>
-      <section class="hero">
-        <div class="container">
-          <h1 class="hero__title">Task Tracker</h1>
-          <p class="hero__text">
-            Кейс о проектировании внутреннего инструмента для управления задачами и командной работой.
+
+    <main class="main">
+      <section class="section-case project_about-section">
+        <p class="project_about-text">сегмент: B2B enterprise SaaS</p>
+        <p class="project_about-text">продукт: система управления задачами и командами</p>
+        <p class="project_about-text">платформа: Desktop</p>
+      </section>
+
+      <section class="section-case hero">
+        <h1 class="hero__title">Спроектировала систему управления задачами, командой и коммуникацией</h1>
+        <img src="images/hero-tracker.png" alt="таск-трекер" class="hero__img" />
+      </section>
+
+      <section class="section-case about_case context">
+        <h2 class="section-case_title" id="context">Контекст</h2>
+        <div class="section-case_text">
+          <p class="case-paragraph">
+            Команды работали сразу в нескольких инструментах: задачи в одном сервисе, обсуждения в другом, информация о
+            сотрудниках в разных местах. Из-за этого процесс распадался.
+          </p>
+          <p class="case-paragraph">
+            Задачи теряли связь с коммуникацией, загрузку команды отслеживали вручную, развитие сотрудников оставалось
+            вне системы. В итоге работа требовала лишних усилий и выпадала из общего контекста.
+          </p>
+          <p class="case-paragraph">
+            Задача — собрать всё в одном продукте и выстроить понятный, связный процесс, в котором задачи, команда и
+            коммуникация работают вместе.
           </p>
         </div>
       </section>
+      <section class="section-case about_case result">
+        <h2 class="section-case_title">Результаты</h2>
+        <div class="section-case_text">
+          <ul class="section-case_list">
+            <li>задачи, команда и коммуникация объединены в одном интерфейсе</li>
+            <li>ускорение обработки задач и коммуникации на ~25%</li>
+            <li>сокращение времени на переключение между инструментами на ~30%</li>
+            <li>повышение прозрачности процессов внутри команды</li>
+            <li>развитие сотрудников встроено в рабочий процесс</li>
+          </ul>
+        </div>
+      </section>
+      <div class="section-case design-screen case_collapse">
+        <div class="image-case_collapse">
+          <img src="images/task-tracker/image-tracker-001.png" alt="элементы таск-трекера" class="design-screen_img" />
+        </div>
+        <div class="image-case_collapse">
+          <img src="images/task-tracker/image-tracker-002.png" alt="элементы таск-трекера" class="design-screen_img" />
+        </div>
+      </div>
+      <div class="section-case design-screen">
+        <img
+          src="images/task-tracker/image-tracker-003.png"
+          alt="Страница таск трекера"
+          class="design-screen_img great-screen"
+        />
+      </div>
+      <div class="section-case design-screen case_collapse">
+        <div class="image-case_collapse">
+          <img src="images/task-tracker/image-tracker-004.png" alt="элементы таск-трекера" class="design-screen_img" />
+        </div>
+        <div class="image-case_collapse">
+          <img src="images/task-tracker/image-tracker-005.png" alt="элементы таск-трекера" class="design-screen_img" />
+        </div>
+      </div>
+      <section class="section-case about_case my_role">
+        <h2 class="section-case_title experience" id="role">Моя роль</h2>
+        <ul class="section-case_list">
+          <li>формировала структуру системы</li>
+          <li>прорабатывала сценарии</li>
+          <li>участвовала в развитии продуктовой логики</li>
+          <li>синхронизировала решения с командой</li>
+        </ul>
+      </section>
+      <section class="section-case about_case exp">
+        <h2 class="section-case_title" id="research">Подход и исследование</h2>
+        <div class="section-case_text">
+          <p class="case-paragraph">
+            Чтобы собрать систему вокруг реальных процессов, я изучила, как команды работают с задачами и
+            взаимодействуют между собой.
+          </p>
+          <ul class="section-case_list">
+            В работе использовала:
+            <li>интервью с участниками команд</li>
+            <li>CJM текущего процесса</li>
+            <li>проектирование архитектуры системы</li>
+            <li>job stories для описания задач пользователей</li>
+            <li>эвристический анализ интерфейсов</li>
+            <li>гипотезы и их проверку</li>
+          </ul>
+          <p class="case-paragraph">
+            Это помогло собрать продукт, где задачи, коммуникация и команда связаны между собой.
+          </p>
+        </div>
+      </section>
+      <div class="section-case design-screen">
+        <img src="images/task-tracker/image-tracker-006.png" alt="Страница таск трекера" class="design-screen_img" />
+      </div>
+      <section class="section-case about_case task">
+        <h2 class="section-case_title">Управление задачами</h2>
+        <ul class="section-case_list">
+          <li>основной сценарий — работа с задачами на доске</li>
+          <li>задачи распределены по этапам, карточки содержат ключевую информацию и участников</li>
+          <li>команда видит статус работы и может быстро переключаться между задачами</li>
+        </ul>
+      </section>
+      <div class="section-case design-screen">
+        <img src="images/task-tracker/image-tracker-003.png" alt="Страница таск трекера" class="design-screen_img" />
+      </div>
+      <div class="section-case design-screen case_collapse">
+        <div class="image-case_collapse">
+          <img src="images/task-tracker/image-tracker-007.png" alt="элементы таск-трекера" class="design-screen_img" />
+        </div>
+        <div class="image-case_collapse image-case_coll">
+          <img src="images/task-tracker/image-tracker-008.png" alt="элементы таск-трекера" class="design-screen_img" />
+          <img src="images/task-tracker/image-tracker-018.png" alt="элементы таск-трекера" class="design-screen_img" />
+        </div>
+        <!-- <div class="image-case_collapse">
+          <img src="images/task-tracker/image-tracker-008.png" alt="элементы таск-трекера" class="design-screen_img" />
+        </div> -->
+      </div>
+      <section class="section-case about_case analytics">
+        <h2 class="section-case_title">Аналитика</h2>
+        <div class="section-case_text">
+          <ul class="section-case_list">
+            В систему добавлены инструменты для контроля и оценки работы команды:
+            <li>воронка задач</li>
+            <li>динамика выполнения</li>
+            <li>загрузка команды</li>
+          </ul>
+          <p class="case-paragraph">
+            Это даёт возможность отслеживать эффективность и принимать решения на основе данных.
+          </p>
+        </div>
+      </section>
+      <div class="section-case design-screen">
+        <img src="images/task-tracker/image-tracker-009.png" alt="Страница таск трекера" class="design-screen_img" />
+      </div>
+      <section class="section-case about_case band">
+        <h2 class="section-case_title">Работа с командой</h2>
+        <div class="section-case_text">
+          <p class="case-paragraph">В системе появился отдельный слой управления командой</p>
+          <ul class="section-case_list">
+            Карточки сотрудников показывают:
+            <li>роли</li>
+            <li>навыки</li>
+            <li>участие в командах</li>
+          </ul>
+          <p class="case-paragraph">Даёт понимание структуры команды и её развития.</p>
+        </div>
+      </section>
+      <div class="section-case design-screen">
+        <img src="images/task-tracker/image-tracker-0010.png" alt="Страница таск трекера" class="design-screen_img" />
+      </div>
+      <section class="section-case about_case result">
+        <h2 class="section-case_title" id="results">Результаты</h2>
+        <div class="section-case_text">
+          <ul class="section-case_list">
+            <li>задачи, команда и коммуникация объединены в одном интерфейсе</li>
+            <li>ускорение обработки задач и коммуникации на ~25%</li>
+            <li>сокращение времени на переключение между инструментами на ~30%</li>
+            <li>повышение прозрачности процессов внутри команды</li>
+            <li>развитие сотрудников встроено в рабочий процесс</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-case about_case insight">
+        <h2 class="section-case_title" id="insights">Инсайты проекта</h2>
+        <div class="section-case_text">
+          <p class="case-paragraph">
+            Связность инструментов напрямую влияет на скорость и качество работы команды. Объединение задач,
+            коммуникации и данных о сотрудниках в одном интерфейсе снижает потери контекста и количество лишних
+            действий.
+          </p>
+          <p class="case-paragraph">
+            Прозрачность статусов и загрузки делает процесс управляемым и уменьшает зависимость от ручной координации
+            внутри команды.
+          </p>
+          <p class="case-paragraph"></p>
+        </div>
+      </section>
     </main>
+    <%= caseNav %>
   </body>
 </html>

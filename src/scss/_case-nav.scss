@@ -1,0 +1,64 @@
+@use "vars" as *;
+
+.case-nav {
+  position: fixed;
+  left: calc(50% + 88px);
+  bottom: 24px;
+  z-index: 30;
+
+  transform: translateX(-50%);
+
+  width: min(620px, calc(100vw - 48px));
+  padding: 6px;
+
+  border-radius: 999px;
+  background: rgba(26, 26, 26, 0.8);
+  backdrop-filter: blur(16px);
+}
+
+.case-nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.case-nav__item {
+  flex: 1;
+}
+
+.case-nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 52px;
+  padding: 0 20px;
+
+  border-radius: 999px;
+
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.72);
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.case-nav__link:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(26, 26, 26, 0.22);
+}
+
+.case-nav__link.is-active {
+  color: $color-bg-secondary;
+  background: rgba(26, 26, 26, 0.92);
+}
