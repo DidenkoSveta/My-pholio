@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Task Tracker</title>
+    <title>Didenko Svetlana | Cистема обработки обращений граждан</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.svg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,13 +17,195 @@
   <body data-page="kcr-lo">
     <%= sidebar %>
 
-    <main>
-      <section class="hero">
-        <div class="container">
-          <h1 class="hero__title">kcr-lo</h1>
-          <p class="hero__text">
-            kcr-lo
+    <main class="main">
+      <section class="section-case project_about-section">
+        <p class="project_about-text">сегмент: B2G / внутренние системы</p>
+        <p class="project_about-text">продукт: система обработки обращений граждан</p>
+        <p class="project_about-text">платформа: Desktop</p>
+      </section>
+
+      <section class="section-case hero">
+        <h1 class="hero__title">Разработала систему обработки обращений граждан</h1>
+        <img src="images/kcr-lo/hero-kcr.png" alt="кцр-ло" class="hero__img" />
+      </section>
+
+      <section class="section-case about_case context">
+        <h2 class="section-case_title" id="context">Контекст</h2>
+        <div class="section-case_text">
+          <p class="case-paragraph">
+            До запуска системы работа с обращениями строилась вручную. Заявки поступали из разных каналов, фиксировались
+            в Excel и распределялись между менеджерами без единой логики. В процессе накапливалась рутина: обращения
+            терялись или дублировались, контроль сроков требовал постоянного внимания, нагрузка на специалистов
+            постепенно росла.
+          </p>
+          <p class="case-paragraph">
+            Задача проекта заключалась в том, чтобы собрать все обращения в одной системе и упростить работу с ними.
+          </p>
         </div>
+      </section>
+      <section class="section-case about_case result">
+        <h2 class="section-case_title">Результаты</h2>
+        <div class="section-case_text">
+          <ul class="section-case_list">
+            <li>время обработки обращений сократилось на 30%</li>
+            <li>уменьшилось количество ручных действий в работе специалистов</li>
+            <li>процесс стал прозрачным за счёт статусов и единого пространства работы</li>
+            <li>количество дублирующихся обращений снизилось примерно на 25%</li>
+          </ul>
+        </div>
+      </section>
+      <div class="section-case design-screen case_collapse">
+        <div class="image-case_collapse">
+          <img src="images/kcr-lo/image-kcr-001.png" alt="элементы приложения" class="design-screen_img" />
+        </div>
+        <div class="image-case_collapse">
+          <img src="images/kcr-lo/image-kcr-002.png" alt="элементы приложения" class="design-screen_img" />
+        </div>
+      </div>
+      <div class="section-case design-screen">
+        <img src="images/kcr-lo/image-kcr-003.png" alt="Страница таск трекера" class="design-screen_img great-screen" />
+      </div>
+      <div class="section-case design-screen case_collapse">
+        <div class="image-case_collapse">
+          <img src="images/kcr-lo/image-kcr-004.png" alt="элементы приложения" class="design-screen_img" />
+        </div>
+        <div class="image-case_collapse">
+          <img src="images/kcr-lo/image-kcr-005.png" alt="элементы приложения" class="design-screen_img" />
+        </div>
+      </div>
+      <section class="section-case about_case my_role">
+        <h2 class="section-case_title experience" id="role">Моя роль</h2>
+        <ul class="section-case_list">
+          <li>логика интерфейса и структура системы</li>
+          <li>проработка пользовательских сценариев</li>
+          <li>работа с менеджерами и аналитиками</li>
+          <li>участие в выборе продуктовых решений</li>
+        </ul>
+      </section>
+      <section class="section-case about_case exp">
+        <h2 class="section-case_title" id="research">Исследование и подход</h2>
+        <div class="section-case_text">
+          <p class="case-paragraph">На старте была только документация и экспертиза команды.</p>
+          <ul class="section-case_list">
+            Чтобы разобраться в процессе, я:
+            <li>провела интервью с менеджерами</li>
+            <li>погрузилась в текущий сценарий обработки обращений</li>
+            <li>выделила ключевые шаги и проблемные места</li>
+          </ul>
+
+          <ul class="section-case_list">
+            Дальше:
+            <li>собрала структуру системы</li>
+            <li>определила основные сценарии работы</li>
+            <li>подготовила несколько концепций интерфейса</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-case about_case exp">
+        <h2 class="section-case_title" id="research">Концепции решения</h2>
+        <div class="section-case_text">
+          <p class="case-paragraph">На этапе проектирования появились два подхода.</p>
+          <ul class="section-case_list">
+            Комплексная модель
+            <li>Единый поток обращений с универсальной логикой обработки.</li>
+          </ul>
+
+          <ul class="section-case_list">
+            Тематическая модель
+            <li>Разделение по категориям с более точечной работой внутри каждой темы.</li>
+          </ul>
+          <p class="case-paragraph">Чтобы принять решение, провели A/B тестирование на реальных сценариях.</p>
+          <p class="case-paragraph">
+            В итоге выбрали тематическую модель. Она быстрее воспринималась, упрощала навигацию и лучше ложилась на
+            реальную работу менеджеров.
+          </p>
+        </div>
+      </section>
+
+      <div class="section-case design-screen">
+        <img src="images/kcr-lo/image-kcr-006.png" alt="Страница таск трекера" class="design-screen_img" />
+      </div>
+      <section class="section-case about_case context">
+        <h2 class="section-case_title">Обработка обращений</h2>
+        <div class="section-case_text">
+          <p class="case-paragraph">
+            Основной сценарий — работа со списком обращений. Раньше менеджеры тратили много времени на поиск и ручную
+            сортировку заявок. В системе появился единый список с фильтрами, статусами и быстрым доступом к нужной
+            информации, что сократило время на операции и снизило количество лишних действий.
+          </p>
+        </div>
+      </section>
+      <div class="section-case design-screen">
+        <img src="images/kcr-lo/image-kcr-003.png" alt="Страница таск трекера" class="design-screen_img" />
+      </div>
+      <section class="section-case about_case context">
+        <h2 class="section-case_title">Карточка обращения</h2>
+        <div class="section-case_text">
+          <p class="case-paragraph">
+            Ранее информация по обращению была разрознена и собиралась вручную. Я спроектировала карточку, где все
+            данные собраны на одном экране, видна история изменений и доступны ключевые действия. Это ускорило обработку
+            и упростило работу специалистов.
+          </p>
+        </div>
+      </section>
+      <div class="section-case design-screen">
+        <img src="images/kcr-lo/image-kcr-008.png" alt="Страница таск трекера" class="design-screen_img" />
+      </div>
+      <section class="section-case about_case context">
+        <h2 class="section-case_title">Аналитика и контроль</h2>
+        <div class="section-case_text">
+          <p class="case-paragraph">
+            В систему добавили базовую аналитику: распределение обращений по каналам, статусы и текущую нагрузку, а
+            также обзор по темам. Это дало менеджерам и руководителям больше контроля над процессом и помогло быстрее
+            принимать решения.
+          </p>
+        </div>
+      </section>
+      <div class="section-case design-screen">
+        <img src="images/kcr-lo/image-kcr-009.png" alt="Страница таск трекера" class="design-screen_img" />
+      </div>
+      <div class="section-case design-screen">
+        <img src="images/kcr-lo/image-kcr-010.png" alt="Страница таск трекера" class="design-screen_img" />
+      </div>
+      <section class="section-case about_case result">
+        <h2 class="section-case_title" id="results">Результаты</h2>
+        <div class="section-case_text">
+          <ul class="section-case_list">
+            <li>время обработки обращений сократилось на 30%</li>
+            <li>уменьшилось количество ручных действий в работе специалистов</li>
+            <li>процесс стал прозрачным за счёт статусов и единого пространства работы</li>
+            <li>количество дублирующихся обращений снизилось примерно на 25%</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-case about_case insight">
+        <h2 class="section-case_title" id="insights">Инсайты проекта</h2>
+        <div class="section-case_text">
+          <p class="case-paragraph">
+            Этот проект показал, насколько важна прозрачность в системах с большим потоком обращений. Когда статусы,
+            сроки и ответственные видны в одном месте, специалисты быстрее ориентируются в работе и увереннее
+            контролируют процесс.
+          </p>
+          <p class="case-paragraph">
+            Базовая аналитика стала опорой для управления нагрузкой: команда получила возможность видеть проблемные
+            зоны, отслеживать динамику и принимать решения быстрее.
+          </p>
+          <p class="case-paragraph"></p>
+        </div>
+      </section>
+      <section class="next-project section-case" aria-label="Следующий проект">
+        <a class="next-project__link" href="kcr-lo.html">
+          <div class="next-project__image">
+            <img src="./images/kcr-lo-preview.png" alt="Превью проекта КЦР ЛО" />
+          </div>
+
+          <div class="next-project__content">
+            <h2 class="next-project__title">Система обработки обращений граждан</h2>
+
+            <p class="next-project__action">Следующий проект</p>
+          </div>
+        </a>
       </section>
     </main>
   </body>
