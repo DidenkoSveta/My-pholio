@@ -98,6 +98,17 @@ h2 {
   gap: 6px;
 }
 
+.section-case_text span {
+  display: inline;
+  font-weight: 800;
+}
+
+.ds-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .result li {
   font-weight: 600;
 }
@@ -228,4 +239,24 @@ h2 {
 .next-project__link:hover .next-project__action::before {
   transform: translateX(3px);
 }
+.case-paragraph span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+  gap: 6px;
+}
 
+.case-paragraph span::before {
+  content: "";
+  display: inline-block;
+
+  width: 16px;
+  height: 16px;
+
+  flex: 0 0 16px;
+
+  background-image: url("../images/icons/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
