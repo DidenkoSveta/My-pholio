@@ -6,6 +6,7 @@
 
     <title>Didenko Svetlana | Product Designer</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.svg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,17 +14,17 @@
       rel="stylesheet"
     />
   <link href="assets/css/style.css" rel="stylesheet"></head>
-  <body data-page="home" class="body" >
+  <body data-page="home" class="body">
     <header class="sidebar">
-  <section class="sidebar-card sidebar-profile" aria-label="Профиль">
-    <img class="sidebar-profile__avatar" src="./images/avatar.png" alt="Светлана Диденко" />
-
-    <div class="sidebar-profile__content">
-      <p class="sidebar-profile__name">Светлана Диденко</p>
-      <p class="sidebar-profile__role">Продуктовый дизайнер</p>
-    </div>
-  </section>
-
+  <a href="index.html" class="link-home">
+    <section class="sidebar-card sidebar-profile" aria-label="Профиль">
+      <img class="sidebar-profile__avatar" src="./images/avatar.png" alt="Светлана Диденко" />
+      <div class="sidebar-profile__content">
+        <p class="sidebar-profile__name">Светлана Диденко</p>
+        <p class="sidebar-profile__role">Продуктовый дизайнер</p>
+      </div>
+    </section>
+  </a>
   <section class="sidebar-card sidebar-about" aria-label="Обо мне">
     <h2 class="sidebar-card__title">Обо мне</h2>
 
@@ -58,13 +59,13 @@
     <nav class="sidebar-nav" aria-label="Навигация по проектам">
       <ul class="sidebar-links sidebar-links--projects">
         <li>
+          <a href="design-system.html">Дизайн-система</a>
+        </li>
+        <li>
           <a href="task-tracker.html">Таск-трекер</a>
         </li>
         <li>
           <a href="kcr-lo.html">КЦР ЛО</a>
-        </li>
-        <li>
-          <a href="design-system.html">Дизайн-система</a>
         </li>
         <li>
           <a href="hr-ai.html">HR.AI</a>
@@ -89,9 +90,58 @@
   </section> -->
 </header>
 
-    <main>
-      <section class="hero">
+    <main class="main main-indx">
+      <section class="section-case project_about-section">
+        <h1 class="cases-text">Проекты</h1>
+      </section>
 
+      <section class="cases-grid">
+        <div class="cases__column">
+          <a class="case-card case-card--large" href="design-system.html">
+            <div class="case-card__image">
+              <img src="./images/design-system-preview.png" alt="Дизайн-система" />
+            </div>
+
+            <div class="case-card__content">
+              <h2 class="card__title">Дизайн-система для 14 продуктов компании</h2>
+              <p class="case-card__meta">B2B / внутренние продукты</p>
+            </div>
+          </a>
+          <a class="case-card case-card--wide" href="kcr-lo.html">
+            <div class="case-card__image">
+              <img src="./images/kcr-lo-preview.png" alt="КЦР ЛО" />
+            </div>
+
+            <div class="case-card__content">
+              <h2 class="card__title">Приложение обработки обращений граждан</h2>
+              <p class="case-card__meta">B2G / внутренние системы</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="cases__column">
+          <a class="case-card case-card--wide" href="hr-ai.html">
+            <div class="case-card__image">
+              <img src="./images/hr-ai-preview.png" alt="HR.AI" />
+            </div>
+
+            <div class="case-card__content">
+              <h2 class="card__title">Cистема поиска и анализа кандидатов</h2>
+              <p class="case-card__meta">B2B / внутренние продукты</p>
+            </div>
+          </a>
+
+          <a class="case-card case-card--large" href="task-tracker.html">
+            <div class="case-card__image">
+              <img src="./images/task-tracker-preview.png" alt="Таск-трекер" />
+            </div>
+
+            <div class="case-card__content">
+              <h2 class="card__title">Система управления задачами и командой</h2>
+              <p class="case-card__meta">B2B enterprise SaaS</p>
+            </div>
+          </a>
+        </div>
       </section>
     </main>
   <script defer src="assets/js/main.js"></script></body>
