@@ -2,7 +2,7 @@
 
 .case-nav {
   position: fixed;
-  left: calc(50% + 88px);
+  left: calc(50% + 172px);
   bottom: 24px;
   z-index: 30;
 
@@ -61,4 +61,40 @@
 .case-nav__link.is-active {
   color: $color-bg-secondary;
   background: rgba(26, 26, 26, 0.92);
+}
+
+@media (max-width: 1040px) {
+  .case-nav {
+    left: calc(50%);
+    bottom: 6px;
+
+    transform: translateX(-50%);
+
+    width: min(620px, calc(100vw - 16px));
+    padding: 6px;
+  }
+  .case-nav__link {
+    min-height: 52px;
+    padding: 0 14px;
+
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 526px) {
+  .insights {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .case-nav__link {
+    min-height: 40px;
+    padding: 0 8px;
+
+    font-size: 12px;
+  }
+  .case-nav {
+    width: min(620px, calc(100vw - 6px));
+  }
 }

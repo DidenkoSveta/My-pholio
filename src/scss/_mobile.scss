@@ -40,12 +40,57 @@
 
   h2 {
     width: 100%;
+    font-size: 20px;
+    flex: 0 0 16px;
+  }
+
+  .section-case_text {
     font-size: 14px;
+    padding-right: 0;
+    gap: 8px;
+    line-height: 140%;
+  }
+  .section-case_list {
+    gap: 6px;
+  }
+  .ds-text {
+    gap: 16px;
+  }
+
+  .project_about-section {
+    display: none;
   }
 
   .card__title {
     flex: 0 0 100%;
     font-size: 16px;
+  }
+  .hero {
+    h1 {
+      max-width: 100%;
+      font-size: 28px;
+    }
+  }
+  .about_case {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .next-project {
+    padding: 20px 20px 100px 20px;
+  }
+
+  .next-project__content {
+    gap: 12px;
+    h2 {
+      flex: 0 0 32px;
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  .next-project__btn {
+    padding: 14px 24px;
+    font-size: 14px;
   }
 }
 
@@ -65,5 +110,36 @@
   }
   .section-case {
     padding: 16px;
+  }
+
+  .hero {
+    h1 {
+      font-size: 24px;
+    }
+  }
+  .next-project {
+    padding: 20px 20px 80px 20px;
+  }
+
+  .next-project__content {
+    h2 {
+      flex: 0 0 40px;
+    }
+  }
+}
+@media (max-width: 1540px) {
+  .about_case {
+    gap: 10%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .about_case {
+    gap: 24px;
+    flex-direction: column;
+    h2 {
+      flex: 0 0 36px;
+      font-size: 28px;
+    }
   }
 }
