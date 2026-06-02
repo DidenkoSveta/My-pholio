@@ -1,31 +1,69 @@
 @use "vars" as *;
 
+@media (max-width: 1040px) {
+  html,
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .section-case {
+    padding: 20px;
+    background-color: $color-bg-secondary;
+    border-radius: 10px;
+  }
+
+  main {
+    margin-top: 70px;
+    width: 100%;
+  }
+
+  .cases-text {
+    font-size: 22px;
+  }
+
+  .cases__column {
+    overflow-x: hidden;
+  }
+
+  .case-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .case-card__content {
+    width: 100%;
+    padding: 4px 0;
+  }
+
+  h2 {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .card__title {
+    flex: 0 0 100%;
+    font-size: 16px;
+  }
+}
+
 @media (max-height: 850px) {
   .sidebar-tags {
     display: none;
   }
 }
 
-@media (max-width: 1040px) {
-  .section-case {
-    padding: 16px;
-    background-color: $color-bg-secondary;
-    border-radius: 10px;
-  }
-}
-
-@media (max-width: 1040px) {
-  .case-card {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+@media (max-width: 420px) {
+  main {
+    margin-top: 58px;
     width: 100%;
   }
-}
-
-@media (max-width: 1040px) {
-  body {
-    width: 100vw;
-    overflow-x: hidden;
+  .case-card {
+    padding: 16px;
+  }
+  .section-case {
+    padding: 16px;
   }
 }
