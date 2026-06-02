@@ -58,6 +58,7 @@ module.exports = (env, argv) => {
           templateParameters: {
             sidebar: getPartial("side-bar"),
             caseNav: getPartial("case-nav"),
+            mobileMenu: getPartial("mobile-menu"),
           },
         });
       }),

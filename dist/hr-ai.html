@@ -38,9 +38,9 @@
     <h2 class="sidebar-card__title">Контакты</h2>
 
     <ul class="sidebar-links">
-      <li>
+      <!-- <li>
         <a href="tel:+79959056774">+7 (995) 905 6774</a>
-      </li>
+      </li> -->
       <li>
         <a href="./files/Didenko_Svetlana_Product_Designer.pdf" target="_blank">CV</a>
       </li>
@@ -89,6 +89,75 @@
     <img class="sidebar-qr__image" src="./images/qr-telegram.png" alt="QR-код Telegram" />
   </section> -->
 </header>
+ <div class="mobile-menu" data-mobile-menu>
+  <button class="mobile-menu__bar" type="button" data-mobile-menu-toggle aria-label="Открыть меню">
+    <span class="mobile-menu__title">Меню</span>
+
+    <span class="mobile-menu__icon" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </button>
+
+  <div class="mobile-menu__panel">
+    <section class="mobile-menu-card mobile-menu-profile" aria-label="Профиль">
+      <img class="mobile-menu-profile__avatar" src="./images/avatar.png" alt="Светлана Диденко" />
+
+      <div class="mobile-menu-profile__content">
+        <p class="mobile-menu-profile__name">Светлана Диденко</p>
+        <p class="mobile-menu-profile__role">Продуктовый дизайнер</p>
+      </div>
+    </section>
+
+    <section class="mobile-menu-card mobile-menu-about" id="about-menu" aria-label="Обо мне">
+      <h2 class="mobile-menu-card__title">Обо мне</h2>
+
+      <p class="mobile-menu-about__text">
+        Помогаю из сложных задач собрать понятный и удобный продукт, с которым приятно работать каждый день
+      </p>
+    </section>
+
+    <section class="mobile-menu-card mobile-menu-contacts" aria-label="Контакты">
+      <h2 class="mobile-menu-card__title">Контакты</h2>
+
+      <div class="mobile-menu-contacts__list">
+        <a class="mobile-menu-contact mobile-menu-contact--active" href="https://t.me/username" target="_blank">
+          <span>Telegram</span>
+        </a>
+
+        <a class="mobile-menu-contact" href="./files/Didenko_Svetlana_Product_Designer.pdf" target="_blank">
+          <span>CV</span>
+        </a>
+
+        <a class="mobile-menu-contact" href="https://www.linkedin.com/" target="_blank">
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="mobile-menu-card mobile-menu-projects" aria-label="Избранные проекты">
+      <h2 class="mobile-menu-card__title">Избранные проекты</h2>
+
+      <nav class="mobile-menu-nav" aria-label="Навигация по проектам">
+        <ul class="mobile-menu-projects__list">
+          <li>
+            <a href="task-tracker.html">Таск-трекер</a>
+          </li>
+          <li>
+            <a href="design-system.html">Дизайн-система</a>
+          </li>
+          <li>
+            <a href="hr-ai.html">HR.AI</a>
+          </li>
+          <li>
+            <a href="kcr-lo.html">КЦР ЛО</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </div>
+</div>
 
 
     <main class="main">

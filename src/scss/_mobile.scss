@@ -1,5 +1,31 @@
+@use "vars" as *;
+
 @media (max-height: 850px) {
   .sidebar-tags {
     display: none;
+  }
+}
+
+@media (max-width: 1040px) {
+  .section-case {
+    padding: 16px;
+    background-color: $color-bg-secondary;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .case-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1040px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
   }
 }

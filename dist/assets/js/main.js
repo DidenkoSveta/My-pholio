@@ -1021,7 +1021,7 @@ __webpack_require__.r(__webpack_exports__);
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1780106947018
+        // 1780367359237
         var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {});
         // only invalidate when locals change
         if (
@@ -3986,6 +3986,24 @@ if (caseNavLinks.length) {
   });
 }
 
+const mobileMenu = document.querySelector("[data-mobile-menu]");
+const mobileMenuToggle = document.querySelector("[data-mobile-menu-toggle]");
+const mobileMenuLinks = document.querySelectorAll(".mobile-menu a");
+
+if (mobileMenu && mobileMenuToggle) {
+  mobileMenuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("is-open");
+    document.body.classList.toggle("menu-is-open", mobileMenu.classList.contains("is-open"));
+  });
+
+  mobileMenuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("is-open");
+      document.body.classList.remove("menu-is-open");
+    });
+  });
+}
+
 
 /***/ }
 
@@ -4083,7 +4101,7 @@ if (caseNavLinks.length) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("390505fdf88784adaa7f")
+/******/ 		__webpack_require__.h = () => ("d3b4c00b7266859dfb56")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

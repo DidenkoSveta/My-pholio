@@ -624,5 +624,353 @@ h2 {
     display: none;
   }
 }
+@media (max-width: 1040px) {
+  .section-case {
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 1040px) {
+  .case-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 1040px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 1040px) {
+  .sidebar {
+    display: none;
+  }
+  .main {
+    width: 100%;
+    padding: 6px;
+  }
+  .main-indx {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: visible;
+  }
+  .body.menu-is-open {
+    overflow: hidden;
+  }
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100vw;
+    height: auto;
+    padding: 6px;
+    background: transparent;
+    pointer-events: none;
+  }
+  .mobile-menu__bar {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 64px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 10px;
+    background: #ffffff;
+    font-family: "Manrope", sans-serif;
+    color: #808080;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+  .mobile-menu__title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    font-family: "Fira Code", monospace;
+  }
+  .mobile-menu__icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 32px;
+    height: 32px;
+  }
+  .mobile-menu__icon span {
+    display: block;
+    width: 32px;
+    height: 3px;
+    border-radius: 999px;
+    background: #1a1a1a;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .mobile-menu.is-open .mobile-menu__icon {
+    justify-content: center;
+  }
+  .mobile-menu.is-open .mobile-menu__icon span:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+  .mobile-menu.is-open .mobile-menu__icon span:nth-child(2) {
+    opacity: 0;
+  }
+  .mobile-menu.is-open .mobile-menu__icon span:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  .mobile-menu__panel {
+    display: none;
+  }
+  .mobile-menu.is-open {
+    bottom: 0;
+    height: 100dvh;
+    pointer-events: auto;
+    background: #f0f0f0;
+  }
+  .mobile-menu.is-open .mobile-menu__panel {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: calc(100dvh - 98px);
+    overflow-y: auto;
+  }
+  .mobile-menu-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  .mobile-menu-card__title {
+    width: auto;
+    margin: 0 0 16px;
+    font-family: "Fira Code", monospace;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #808080;
+  }
+  .mobile-menu-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+  .mobile-menu-profile__avatar {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .mobile-menu-profile__name {
+    margin: 0 0 6px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #1a1a1a;
+  }
+  .mobile-menu-profile__role {
+    margin: 0;
+    font-family: "Fira Code", monospace;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.08em;
+    color: #808080;
+  }
+  .mobile-menu-about__text {
+    margin: 0;
+    max-width: 640px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.55;
+    color: #1a1a1a;
+  }
+  .mobile-menu-contacts__list {
+    display: flex;
+    gap: 12px;
+  }
+  .mobile-menu-contact {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex: 1 1 0;
+    min-height: 94px;
+    padding: 16px;
+    border-radius: 10px;
+    background: #f0f0f0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .mobile-menu-contact::before {
+    content: "↗";
+    font-size: 20px;
+    line-height: 1;
+    color: #2f80ed;
+  }
+  .mobile-menu-contact--active {
+    background: #2f80ed;
+    color: #ffffff;
+  }
+  .mobile-menu-contact--active::before {
+    color: #ffffff;
+  }
+  .mobile-menu-projects__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .mobile-menu-projects__list a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 74px;
+    padding: 0 16px;
+    border-radius: 10px;
+    background: #f0f0f0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+  .mobile-menu-projects__list a::before {
+    content: "›";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+    color: #2f80ed;
+  }
+  .cases-grid {
+    flex-direction: column;
+    height: auto;
+  }
+  .cases__column {
+    height: auto;
+  }
+  .case-card,
+  .case-card--large,
+  .case-card--wide {
+    height: auto;
+  }
+  .case-card__image,
+  .case-card--large .case-card__image,
+  .case-card--wide .case-card__image {
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}
+@media (max-width: 600px) {
+  .mobile-menu__bar {
+    min-height: 54px;
+    padding: 16px;
+    border-radius: 10px;
+  }
+  .mobile-menu__title {
+    font-size: 24px;
+  }
+  .mobile-menu__icon {
+    width: 32px;
+    height: 32px;
+    gap: 8px;
+  }
+  .mobile-menu__icon span {
+    width: 32px;
+    height: 3px;
+  }
+  .mobile-menu-card {
+    padding: 16px;
+    border-radius: 10px;
+  }
+  .mobile-menu-card__title {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  .mobile-menu-profile__avatar {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 10px;
+  }
+  .mobile-menu-profile__name {
+    font-size: 20px;
+  }
+  .mobile-menu-profile__role {
+    font-size: 16px;
+  }
+  .mobile-menu-about__text {
+    font-size: 16px;
+  }
+  .mobile-menu-contacts__list {
+    gap: 8px;
+  }
+  .mobile-menu-contact {
+    min-height: 74px;
+    padding: 16px;
+    font-size: 16px;
+  }
+  .mobile-menu-contact::before {
+    top: 12px;
+    left: 16px;
+    font-size: 20px;
+  }
+  .mobile-menu-projects__list a {
+    min-height: 40px;
+    padding: 0 16px;
+    font-size: 16px;
+  }
+  .mobile-menu-projects__list a::before {
+    font-size: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .mobile-menu {
+    padding: 4px;
+  }
+  .mobile-menu__bar {
+    min-height: 54px;
+    padding: 0 22px;
+  }
+  .mobile-menu__title {
+    font-size: 22px;
+  }
+  .mobile-menu-card {
+    padding: 16px;
+  }
+  .mobile-menu-profile__name {
+    font-size: 24px;
+  }
+  .mobile-menu-profile__role {
+    font-size: 16px;
+  }
+  .mobile-menu-about__text {
+    font-size: 16px;
+  }
+  .mobile-menu-contacts__list {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 
 /*# sourceMappingURL=style.css.map*/

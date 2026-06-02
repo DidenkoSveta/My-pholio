@@ -96,3 +96,21 @@ if (caseNavLinks.length) {
     observer.observe(section);
   });
 }
+
+const mobileMenu = document.querySelector("[data-mobile-menu]");
+const mobileMenuToggle = document.querySelector("[data-mobile-menu-toggle]");
+const mobileMenuLinks = document.querySelectorAll(".mobile-menu a");
+
+if (mobileMenu && mobileMenuToggle) {
+  mobileMenuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("is-open");
+    document.body.classList.toggle("menu-is-open", mobileMenu.classList.contains("is-open"));
+  });
+
+  mobileMenuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("is-open");
+      document.body.classList.remove("menu-is-open");
+    });
+  });
+}
