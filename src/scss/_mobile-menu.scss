@@ -216,8 +216,10 @@
     position: relative;
 
     display: flex;
-    gap: 10px;
+    gap: 6px;
     align-items: center;
+    justify-content: center;
+    width: 33%;
 
     flex: 1 1 0;
     min-height: 94px;
@@ -226,7 +228,7 @@
     border-radius: 10px;
     background: $color-bg-primary;
 
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1;
     color: $color-text-primary;
@@ -238,16 +240,38 @@
   }
 
   .mobile-menu-contact::before {
-    content: "↗";
+    content: "";
+    display: inline-block;
 
-    font-size: 20px;
-    line-height: 1;
-    color: #2f80ed;
+    width: 20px;
+    height: 20px;
+
+    flex: 0 0 20px;
+
+    background-image: url("../images/icons/arrow-black.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 
   .mobile-menu-contact--active {
     background: #2f80ed;
     color: #ffffff;
+  }
+
+  .mobile-menu-contact:first-child::before {
+    content: "";
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    flex: 0 0 20px;
+
+    background-image: url("../images/icons/arrow-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 
   .mobile-menu-contact--active::before {
@@ -284,12 +308,18 @@
   }
 
   .mobile-menu-projects__list a::before {
-    content: "›";
+    content: "";
+    display: inline-block;
 
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1;
-    color: #2f80ed;
+    width: 16px;
+    height: 16px;
+
+    flex: 0 0 16px;
+
+    background-image: url("../images/icons/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 
   .cases-grid {
@@ -377,10 +407,22 @@
   }
 
   .mobile-menu-contact::before {
-    top: 12px;
-    left: 16px;
+    width: 16px;
+    height: 16px;
 
-    font-size: 20px;
+    flex: 0 0 16px;
+  }
+
+  .mobile-menu-contact--active {
+    background: #2f80ed;
+    color: #ffffff;
+  }
+
+  .mobile-menu-contact:first-child::before {
+    width: 16px;
+    height: 16px;
+
+    flex: 0 0 16px;
   }
 
   .mobile-menu-projects__list a {
@@ -428,5 +470,8 @@
   .mobile-menu-contacts__list {
     align-items: center;
     justify-content: space-between;
+  }
+  .mobile-menu-contact {
+    flex-direction: column;
   }
 }

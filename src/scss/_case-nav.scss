@@ -60,7 +60,12 @@
 
 .case-nav__link.is-active {
   color: $color-bg-secondary;
-  background: rgba(26, 26, 26, 0.92);
+  background: $color-text-primary;
+}
+
+.case-nav__link.is-active:hover {
+  color: $color-bg-secondary;
+  background: #000000;
 }
 
 @media (max-width: 1040px) {

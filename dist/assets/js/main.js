@@ -1021,7 +1021,7 @@ __webpack_require__.r(__webpack_exports__);
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1780381500208
+        // 1780534342019
         var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {});
         // only invalidate when locals change
         if (
@@ -4004,6 +4004,17 @@ if (mobileMenu && mobileMenuToggle) {
   });
 }
 
+const shortWords = ["в", "на", "к", "по", "и", "с", "о", "у", "за", "от"];
+
+document.querySelectorAll(".text").forEach((el) => {
+  let html = el.innerHTML;
+  shortWords.forEach((word) => {
+    const regex = new RegExp(`\\s${word}\\s`, "g");
+    html = html.replace(regex, `&nbsp;${word} `);
+  });
+  el.innerHTML = html;
+});
+
 
 /***/ }
 
@@ -4101,7 +4112,7 @@ if (mobileMenu && mobileMenuToggle) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("7d86a339f94290214920")
+/******/ 		__webpack_require__.h = () => ("d430bef77327643ac8ef")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

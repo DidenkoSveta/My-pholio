@@ -1,7 +1,6 @@
 /*!**************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
   \**************************************************************************************************************/
-@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -56,13 +55,13 @@ html {
 
 body {
   min-width: 320px;
+  display: flex;
   height: 100vh;
   overflow-x: hidden;
   font-family: "Manrope", sans-serif;
   color: #1a1a1a;
   background: #f0f0f0;
   gap: 6px;
-  display: flex;
 }
 
 .main {
@@ -145,10 +144,15 @@ h2 {
 }
 
 .section-case_list li::before {
-  content: "›";
-  font-size: 24px;
-  font-weight: 300;
-  color: #006cff;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  background-image: url(../../assets/images/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .section-case_list li {
@@ -345,6 +349,7 @@ h2 {
 
 .next-project {
   padding: 24px 24px 120px 24px;
+  position: relative;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -374,13 +379,19 @@ h2 {
   color: #ffffff;
   background-color: #1a1a1a;
   padding: 16px 24px;
-  border-radius: 10px;
+  border-radius: 999px;
   font-size: 16px;
-  display: flex;
+  font-weight: 500;
+  min-height: 52px;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
-
+.next-project__btn:hover {
+  transform: translateY(-2px);
+  background-color: #000000;
+}
 .next-project__btn::after {
   content: "";
   display: inline-block;
@@ -391,6 +402,19 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition: transform 0.3s ease;
+}
+.next-project__btn:hover::after {
+  transform: translateX(6px);
+}
+
+.hrr {
+  display: block;
+  min-height: 2px;
+  width: 100%;
+  background-color: #f0f0f0;
+  font-size: 6px;
+  line-height: 1;
 }
 
 .sidebar {
@@ -509,28 +533,37 @@ h2 {
   transition: color 0.2s ease;
 }
 
-.sidebar-links a::before {
-  content: "↗";
-  font-size: 24px;
-  line-height: 1;
-  color: #9a9a9a;
-  transition: color 0.2s ease, transform 0.2s ease;
+.sidebar-links__contacts a::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  background-image: url(../../assets/images/arrow-black.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-.sidebar-links a:hover {
-  color: #006cff;
-}
-
-.sidebar-links a:hover::before {
+.sidebar-links__contacts a:hover::before {
   color: #006cff;
   transform: translate(1px, -1px);
 }
 
 .sidebar-links--projects a::before {
-  content: "›";
-  font-size: 24px;
-  font-weight: 300;
-  color: #006cff;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  background-image: url(../../assets/images/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.sidebar-links--projects a:hover::before {
+  transform: translate(1px, -1px);
 }
 
 .case-nav {
@@ -582,7 +615,12 @@ h2 {
 
 .case-nav__link.is-active {
   color: #ffffff;
-  background: rgba(26, 26, 26, 0.92);
+  background: #1a1a1a;
+}
+
+.case-nav__link.is-active:hover {
+  color: #ffffff;
+  background: #000000;
 }
 
 @media (max-width: 1040px) {
@@ -702,7 +740,7 @@ h2 {
 }
 @media (max-width: 420px) {
   main {
-    margin-top: 58px;
+    margin-top: 64px;
     width: 100%;
   }
   .case-card {
@@ -898,14 +936,16 @@ h2 {
   .mobile-menu-contact {
     position: relative;
     display: flex;
-    gap: 10px;
+    gap: 6px;
     align-items: center;
+    justify-content: center;
+    width: 33%;
     flex: 1 1 0;
     min-height: 94px;
     padding: 16px;
     border-radius: 10px;
     background: #f0f0f0;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1;
     color: #1a1a1a;
@@ -913,14 +953,30 @@ h2 {
     transition: background 0.2s ease, color 0.2s ease;
   }
   .mobile-menu-contact::before {
-    content: "↗";
-    font-size: 20px;
-    line-height: 1;
-    color: #2f80ed;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    background-image: url(../../assets/images/arrow-black.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   .mobile-menu-contact--active {
     background: #2f80ed;
     color: #ffffff;
+  }
+  .mobile-menu-contact:first-child::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    background-image: url(../../assets/images/arrow-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   .mobile-menu-contact--active::before {
     color: #ffffff;
@@ -948,11 +1004,15 @@ h2 {
     text-decoration: none;
   }
   .mobile-menu-projects__list a::before {
-    content: "›";
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1;
-    color: #2f80ed;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+    background-image: url(../../assets/images/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   .cases-grid {
     flex-direction: column;
@@ -1022,9 +1082,18 @@ h2 {
     font-size: 16px;
   }
   .mobile-menu-contact::before {
-    top: 12px;
-    left: 16px;
-    font-size: 20px;
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+  }
+  .mobile-menu-contact--active {
+    background: #2f80ed;
+    color: #ffffff;
+  }
+  .mobile-menu-contact:first-child::before {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
   }
   .mobile-menu-projects__list a {
     min-height: 40px;
@@ -1061,6 +1130,9 @@ h2 {
   .mobile-menu-contacts__list {
     align-items: center;
     justify-content: space-between;
+  }
+  .mobile-menu-contact {
+    flex-direction: column;
   }
 }
 

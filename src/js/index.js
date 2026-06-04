@@ -114,3 +114,14 @@ if (mobileMenu && mobileMenuToggle) {
     });
   });
 }
+
+const shortWords = ["в", "на", "к", "по", "и", "с", "о", "у", "за", "от"];
+
+document.querySelectorAll(".text").forEach((el) => {
+  let html = el.innerHTML;
+  shortWords.forEach((word) => {
+    const regex = new RegExp(`\\s${word}\\s`, "g");
+    html = html.replace(regex, `&nbsp;${word} `);
+  });
+  el.innerHTML = html;
+});

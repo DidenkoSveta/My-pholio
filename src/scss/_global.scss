@@ -5,13 +5,13 @@ html {
 }
 body {
   min-width: 320px;
+  display: flex;
   height: 100vh;
   overflow-x: hidden;
   font-family: $font-primary;
   color: $color-text-primary;
   background: $color-bg-primary;
   gap: 6px;
-  display: flex;
 }
 .main {
   position: relative;
@@ -88,10 +88,18 @@ h2 {
   gap: 8px;
 }
 .section-case_list li::before {
-  content: "›";
-  font-size: 24px;
-  font-weight: 300;
-  color: #006cff;
+  content: "";
+  display: inline-block;
+
+  width: 16px;
+  height: 16px;
+
+  flex: 0 0 16px;
+
+  background-image: url("../images/icons/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .section-case_list li {
   display: inline-flex;
@@ -303,6 +311,7 @@ h2 {
 
 .next-project {
   padding: 24px 24px 120px 24px;
+  position: relative;
   background-color: $color-bg-secondary;
   display: flex;
   justify-content: center;
@@ -332,25 +341,48 @@ h2 {
   color: $color-bg-secondary;
   background-color: $color-text-primary;
   padding: 16px 24px;
-  border-radius: 10px;
+  border-radius: 999px;
   font-size: 16px;
+  font-weight: 500;
+  min-height: 52px;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    background-color: #000000;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    background-image: url("../images/icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::after {
+    transform: translateX(6px);
+  }
 }
 
-.next-project__btn::after {
-  content: "";
-  display: inline-block;
-
-  width: 18px;
-  height: 18px;
-
-  flex: 0 0 18px;
-
-  background-image: url("../images/icons/arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+.hrr {
+  display: block;
+  min-height: 2px;
+  width: 100%;
+  background-color: $color-bg-primary;
+  font-size: 6px;
+  line-height: 1;
 }
