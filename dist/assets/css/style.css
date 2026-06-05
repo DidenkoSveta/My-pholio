@@ -241,29 +241,28 @@ h2 {
   background: #f0f0f0;
 }
 
-.cases__column {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  width: 100%;
-  height: 100%;
-}
-
 .case-card {
   display: flex;
   flex-direction: column;
   padding: 24px;
+  gap: 8px;
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
   background: #ffffff;
   color: inherit;
   text-decoration: none;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.case-card img {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .case-card:hover {
   transform: translateY(-2px);
+}
+.case-card:hover img {
+  transform: scale(1.02);
 }
 
 .case-card__image {
@@ -271,14 +270,6 @@ h2 {
   height: 272px;
   overflow: hidden;
   border-radius: 8px;
-}
-
-.case-card--large {
-  height: 45%;
-}
-
-.case-card--wide {
-  height: 45%;
 }
 
 .case-card--large .case-card__image {
@@ -303,13 +294,13 @@ h2 {
   gap: 8px 24px;
   flex: 0 0 auto;
   flex-wrap: wrap;
-  padding: 14px 18px 18px;
+  padding: 14px 18px 10px;
 }
 
 .card__title {
   margin: 0;
-  font-size: 17px;
-  flex: 0 0 380px;
+  font-size: 20px;
+  flex: 0 0 450px;
   font-weight: 600;
   line-height: 1.3;
   color: #1a1a1a;
@@ -323,7 +314,7 @@ h2 {
   white-space: nowrap;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .cases-grid {
     grid-template-columns: 1fr;
   }
@@ -652,6 +643,11 @@ h2 {
     width: min(620px, 100vw - 6px);
   }
 }
+@media (max-width: 1340px) {
+  .card__title {
+    font-size: 16px;
+  }
+}
 @media (max-width: 1040px) {
   html,
   body {
@@ -664,7 +660,7 @@ h2 {
     border-radius: 10px;
   }
   main {
-    margin-top: 70px;
+    margin-top: 76px;
     width: 100%;
   }
   .cases-text {
@@ -715,6 +711,7 @@ h2 {
   .about_case {
     flex-direction: column;
     gap: 16px;
+    font-size: 14px;
   }
   .next-project {
     padding: 20px 20px 100px 20px;
@@ -740,7 +737,7 @@ h2 {
 }
 @media (max-width: 420px) {
   main {
-    margin-top: 64px;
+    margin-top: 70px;
     width: 100%;
   }
   .case-card {
@@ -778,7 +775,7 @@ h2 {
   display: none;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1200px) {
   .sidebar {
     display: none;
   }

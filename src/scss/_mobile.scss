@@ -1,5 +1,11 @@
 @use "vars" as *;
 
+@media (max-width: 1340px) {
+  .card__title {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 1040px) {
   html,
   body {
@@ -13,7 +19,7 @@
   }
 
   main {
-    margin-top: 70px;
+    margin-top: 76px;
     width: 100%;
   }
 
@@ -74,6 +80,7 @@
   .about_case {
     flex-direction: column;
     gap: 16px;
+    font-size: 14px;
   }
   .next-project {
     padding: 20px 20px 100px 20px;
@@ -102,7 +109,7 @@
 
 @media (max-width: 420px) {
   main {
-    margin-top: 64px;
+    margin-top: 70px;
     width: 100%;
   }
   .case-card {

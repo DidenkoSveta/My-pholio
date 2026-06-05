@@ -1021,7 +1021,7 @@ __webpack_require__.r(__webpack_exports__);
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1780578670275
+        // 1780626222197
         var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {});
         // only invalidate when locals change
         if (
@@ -4112,7 +4112,7 @@ document.querySelectorAll(".text").forEach((el) => {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("19c3fe6a04382f944f45")
+/******/ 		__webpack_require__.h = () => ("cc5e6670cf4e37015e4e")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
